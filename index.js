@@ -9,7 +9,7 @@ addBtn.addEventListener("click",function(){
     let addTxt=document.getElementById("addTxt");
     let addTitle = document.getElementById("addTitle");
     let notes = localStorage.getItem("notes");
-    // let notesObj=[];
+    let notesObj=[];
     
     if(notes==null){
         notesObj=[];
