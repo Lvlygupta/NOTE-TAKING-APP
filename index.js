@@ -91,11 +91,12 @@ function delNote(index) {
 }
 let st = document.getElementById("searchTxt");
 st.addEventListener("input", function () {
+  let a = st.value.toUpperCase();
   let inputVal = st.value.toLowerCase();
   let noteCards = document.getElementsByClassName("Notescard");
   Array.from(noteCards).forEach(function (element) {
     let cardTxt = element.getElementsByTagName("p")[0].innerText;
-    if (cardTxt.includes(inputVal)) {
+    if (cardTxt.includes(inputVal) || cardTxt.includes(a)){
       element.style.display = "block";
     } else {
       element.style.display = "none";
