@@ -1,4 +1,4 @@
-console.log("Hey this is the note taking app!");
+console.log("Hey this is an app which is basically used to maintain the note of the user! ");
 
 showNotes();
 let addTxt = document.getElementById("addTxt");
